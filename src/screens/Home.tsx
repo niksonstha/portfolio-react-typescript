@@ -1,9 +1,13 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import Banner from "../components/Banner";
 
 const Home = () => {
   return (
     <Box>
-      <Text>Nikson</Text>
+      <Banner color="#372948" />
+      <Banner color="#372948" />
+      <Banner color="#372948" />
+      <Banner color="#372948" />
     </Box>
   );
 };
