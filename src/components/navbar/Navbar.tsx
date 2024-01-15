@@ -1,4 +1,4 @@
-import { Box, ListItem, UnorderedList, Tooltip } from "@chakra-ui/react";
+import { Box, ListItem, UnorderedList, Tooltip, Text } from "@chakra-ui/react";
 import { FaHome, FaUser } from "react-icons/fa";
 import { AiFillProject } from "react-icons/ai";
 import { FaMessage } from "react-icons/fa6";
@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const iconList = [
   { icon: <FaHome />, label: "Home", path: "/" },
-  { icon: <FaUser />, label: "About Me", path: "about" },
+  { icon: <FaUser />, label: "About", path: "about" },
   { icon: <AiFillProject />, label: "Projects", path: "projects" },
   { icon: <FaMessage />, label: "Contact", path: "contact" },
 ];
@@ -49,7 +49,15 @@ const Navbar = () => {
         {iconList.map((item, index) => (
           <Tooltip key={index} label={item.label} hasArrow>
             <NavLink to={item.path}>
-              <ListItem {...listItemStyles}>{item.icon}</ListItem>
+              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
+                <ListItem {...listItemStyles}>{item.icon}</ListItem>
+                <Text
+                  fontSize={["0.6rem", "0.8rem"]}
+                  display={{ base: "block", lg: "none" }}
+                >
+                  {item.label}
+                </Text>
+              </Box>
             </NavLink>
           </Tooltip>
         ))}
