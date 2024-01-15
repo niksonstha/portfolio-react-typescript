@@ -4,6 +4,7 @@ import TechnicalSkills from "../components/technical-skills/TechnicalSkills";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ProfessionalSkills from "../components/professional-skills/ProfessionalSkills";
 
 const Aboutme = () => {
   useEffect(() => {
@@ -49,6 +50,7 @@ const Aboutme = () => {
       <Box>
         <Education />
         <TechnicalSkills />
+        <ProfessionalSkills />
       </Box>
     </Box>
   );

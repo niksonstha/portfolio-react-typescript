@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 
 const Education = () => {
   return (
@@ -9,6 +9,7 @@ const Education = () => {
       alignItems={"center"}
       justifyContent={"center"}
       mt={5}
+      mb={20}
     >
       <Heading
         fontFamily={"Long Cang"}
@@ -20,23 +21,15 @@ const Education = () => {
         Education
       </Heading>
 
-      <Box
-        width={["90vw", "50vw"]}
-        display={"flex"}
-        flexDir={["column", "row"]}
-        alignItems={"center"}
-        justifyContent={"center"}
-        gap={10}
-      >
+      <SimpleGrid width={["90vw", "50vw"]} spacing={4} columns={1}>
         <Box
           bgColor={"#fccb06"}
           padding={4}
           color={"black"}
           rounded={10}
-          flex={1}
-          width={"100%"}
           data-aos="flip-right"
           data-aos-delay="50"
+          width={"100%"}
         >
           <Text fontSize="lg" fontWeight="bold">
             plus two
@@ -52,10 +45,9 @@ const Education = () => {
           padding={4}
           color={"black"}
           rounded={10}
-          flex={1}
-          width={"100%"}
           data-aos="flip-left"
           data-aos-delay="100"
+          width={"100%"}
         >
           <Text fontSize="lg" fontWeight="bold">
             Bachelor of Computer Application
@@ -65,7 +57,7 @@ const Education = () => {
             2019 - Current
           </Text>
         </Box>
-      </Box>
+      </SimpleGrid>
     </Box>
   );
 };

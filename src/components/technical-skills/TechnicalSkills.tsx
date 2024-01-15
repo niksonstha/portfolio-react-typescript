@@ -15,7 +15,7 @@ const TechnicalSkills = () => {
       flexDir={"column"}
       alignItems={"center"}
       justifyContent={"center"}
-      mb={100}
+      mb={20}
     >
       <Heading
         textAlign={"center"}
@@ -27,7 +27,7 @@ const TechnicalSkills = () => {
         Technical Skills
       </Heading>
 
-      <SimpleGrid columns={[2, 3]} spacing={3}>
+      <SimpleGrid columns={[2, 2, 2, 3]} spacing={3}>
         <Box
           bgColor={"#fccb06"}
           padding={4}
@@ -36,11 +36,11 @@ const TechnicalSkills = () => {
           data-aos="flip-right"
           data-aos-delay="50"
         >
-          <Text fontSize="lg" fontWeight="bold">
+          <Text fontSize={["sm", "md", "md", "lg"]} fontWeight="bold">
             Programming Language
           </Text>
-          <UnorderedList spacing={3} color={"gray"}>
-            <SimpleGrid spacing={3} columns={[1, 2]}>
+          <UnorderedList color={"gray"}>
+            <SimpleGrid columns={[1, 1, 1, 2]}>
               <ListItem>JavaScript</ListItem>
               <ListItem>Typescript</ListItem>
             </SimpleGrid>
@@ -55,7 +55,7 @@ const TechnicalSkills = () => {
           data-aos="flip-right"
           data-aos-delay="50"
         >
-          <Text fontSize="lg" fontWeight="bold">
+          <Text fontSize={["sm", "md", "md", "lg"]} fontWeight="bold">
             Frontend
           </Text>
           <UnorderedList color={"gray"}>
@@ -76,9 +76,7 @@ const TechnicalSkills = () => {
           data-aos="flip-right"
           data-aos-delay="50"
         >
-          <Text fontSize="lg" fontWeight="bold">
-            Backend
-          </Text>
+          <Text fontWeight="bold">Backend</Text>
           <UnorderedList color={"gray"}>
             <SimpleGrid spacing={3} columns={[1, 2]}>
               <ListItem>Node.js</ListItem>
@@ -117,7 +115,7 @@ const TechnicalSkills = () => {
             Api Integration
           </Text>
           <UnorderedList color={"gray"}>
-            <SimpleGrid spacing={3} columns={2}>
+            <SimpleGrid spacing={3} columns={1}>
               <ListItem>Restful APIs</ListItem>
             </SimpleGrid>
           </UnorderedList>
@@ -134,7 +132,7 @@ const TechnicalSkills = () => {
             Version Control
           </Text>
           <UnorderedList color={"gray"}>
-            <SimpleGrid spacing={3} columns={[1, 2]}>
+            <SimpleGrid spacing={3} columns={1}>
               <ListItem>Git and github</ListItem>
             </SimpleGrid>
           </UnorderedList>
