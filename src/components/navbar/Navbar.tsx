@@ -49,8 +49,13 @@ const Navbar = () => {
         {iconList.map((item, index) => (
           <Tooltip key={index} label={item.label} hasArrow>
             <NavLink to={item.path}>
-              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
-                <ListItem {...listItemStyles}>{item.icon}</ListItem>
+              <Box
+                display={"flex"}
+                flexDir={"column"}
+                alignItems={"center"}
+                {...listItemStyles}
+              >
+                <ListItem>{item.icon}</ListItem>
                 <Text
                   fontSize={["0.6rem", "0.8rem"]}
                   display={{ base: "block", lg: "none" }}
