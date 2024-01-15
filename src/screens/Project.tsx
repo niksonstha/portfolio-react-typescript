@@ -2,7 +2,13 @@ import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
 
 const Project = () => {
   return (
-    <Box color={"white"} width={"80vw"} mx={"auto"} data-aos="fade-down">
+    <Box
+      color={"white"}
+      width={"80vw"}
+      mx={"auto"}
+      data-aos="fade-down"
+      overflowX={"hidden"}
+    >
       <Heading
         fontFamily={"Long Cang"}
         textAlign={"center"}
