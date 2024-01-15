@@ -20,6 +20,9 @@ const Aboutme = () => {
         flexDir={"column"}
         justifyContent={"center"}
         height={["", "100vh"]}
+        style={{
+          scrollSnapAlign: "start",
+        }}
       >
         <Heading
           fontSize={["4rem", "8rem"]}

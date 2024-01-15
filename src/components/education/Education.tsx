@@ -10,6 +10,10 @@ const Education = () => {
       justifyContent={"center"}
       mt={5}
       mb={20}
+      style={{
+        scrollSnapAlign: "start",
+      }}
+      height={"100vh"}
     >
       <Heading
         fontFamily={"Long Cang"}

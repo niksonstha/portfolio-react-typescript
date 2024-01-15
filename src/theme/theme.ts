@@ -9,6 +9,8 @@ export const theme = {
           fontFamily: "Long Cang",
           color: "white",
         },
+        scrollSnapType: "y mandatory",
+        scrollBehavior: "smooth",
         "::-webkit-scrollbar": {
           display: "none",
         },
