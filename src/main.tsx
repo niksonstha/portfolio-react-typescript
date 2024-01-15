@@ -3,13 +3,13 @@ import App from "./App.tsx";
 import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { theme } from "./theme/theme.ts";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 const customeTheme = extendTheme(theme);
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
+  <HashRouter>
     <ChakraProvider theme={customeTheme}>
       <App />
     </ChakraProvider>
-  </BrowserRouter>
+  </HashRouter>
 );
