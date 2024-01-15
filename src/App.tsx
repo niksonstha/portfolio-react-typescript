@@ -1,11 +1,11 @@
 import { Box } from "@chakra-ui/react";
 import Home from "./screens/Home";
-import SideBar from "./components/SideBar";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
-    <Box height={"100vh"}>
-      <SideBar />
+    <Box>
+      <Navbar />
       <Home />
     </Box>
   );

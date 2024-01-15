@@ -1,13 +1,15 @@
 import { Box } from "@chakra-ui/react";
-import Banner from "../components/Banner";
+import Banner from "../components/banner/Banner";
+import Aboutme from "./Aboutme";
+import { Route, Routes } from "react-router-dom";
 
 const Home = () => {
   return (
-    <Box>
-      <Banner color="#372948" />
-      <Banner color="#372948" />
-      <Banner color="#372948" />
-      <Banner color="#372948" />
+    <Box id="home">
+      <Routes>
+        <Route path="/" element={<Banner />} />
+        <Route path="/about" element={<Aboutme />} />
+      </Routes>
     </Box>
   );
 };
