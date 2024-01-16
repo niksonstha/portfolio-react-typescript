@@ -62,7 +62,13 @@ const Aboutme = () => {
           organization.
         </Text>
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-          <Button mt={3} colorScheme="yellow" onClick={handleDownloadCV}>
+          <Button
+            mt={3}
+            colorScheme="yellow"
+            onClick={handleDownloadCV}
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
             Download cv
           </Button>
         </motion.div>
