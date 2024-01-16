@@ -14,7 +14,7 @@ const Aboutme = () => {
 
     const fileName = resume.split("/").pop();
 
-    aTag.setAttribute("download", fileName);
+    aTag.setAttribute("download", fileName || "nikson-resume.pdf");
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
