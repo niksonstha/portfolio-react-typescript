@@ -1,6 +1,12 @@
-import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
+import ProjectsCard from "../components/project-card/ProjectsCard";
+import { useEffect } from "react";
+import { getRepo } from "../api/api";
 
 const Project = () => {
+  useEffect(() => {
+    getRepo();
+  }, []);
   return (
     <Box color={"white"} width={"80vw"} mx={"auto"} overflowX={"hidden"}>
       <Heading
@@ -11,38 +17,9 @@ const Project = () => {
       >
         Projects
       </Heading>
-
-      <SimpleGrid columns={[1, 2, 3]} spacing={10} mt={4}>
-        <Box
-          bgColor={"#fccb06"}
-          height={"200px"}
-          width={"100%"}
-          rounded={10}
-          cursor={"pointer"}
-        ></Box>
-        <Box
-          bgColor={"#fccb06"}
-          height={"200px"}
-          width={"100%"}
-          rounded={10}
-          cursor={"pointer"}
-        ></Box>
-        <Box
-          bgColor={"#fccb06"}
-          height={"200px"}
-          width={"100%"}
-          rounded={10}
-          cursor={"pointer"}
-          data-aos-anchor-placement="center"
-        ></Box>
-        <Box
-          bgColor={"#fccb06"}
-          height={"200px"}
-          width={"100%"}
-          rounded={10}
-          cursor={"pointer"}
-        ></Box>
-      </SimpleGrid>
+      <Box padding={3}>
+        <ProjectsCard />
+      </Box>
     </Box>
   );
 };

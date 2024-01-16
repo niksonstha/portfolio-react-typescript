@@ -1,5 +1,5 @@
 import { Box, Heading } from "@chakra-ui/react";
-import banner from "../../assets/banner3.jpg";
+import banner from "../../assets/banner.jpg";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
