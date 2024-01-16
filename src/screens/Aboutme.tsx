@@ -1,11 +1,36 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Heading, Text } from "@chakra-ui/react";
 import Education from "../components/education/Education";
 import TechnicalSkills from "../components/technical-skills/TechnicalSkills";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import resumePath from "../assets/nikson-shrestha-resume.pdf";
 
 const Aboutme = () => {
+  const handleDownloadCV = async () => {
+    const fileName = "nikson-shrestha-resume.pdf";
+    const filePath = resumePath;
+
+    try {
+      const response = await fetch(filePath);
+      const fileContent = await response.blob();
+
+      const url = URL.createObjectURL(fileContent);
+
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = fileName;
+
+      document.body.appendChild(link);
+      link.click();
+
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Error downloading file:", error);
+    }
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -48,6 +73,15 @@ const Aboutme = () => {
           results-driven individual, I am ready to bring my skills to your
           organization.
         </Text>
+
+        <Button
+          mt={3}
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          onClick={handleDownloadCV}
+        >
+          Download CV
+        </Button>
       </Box>
       <Box>
         <Education />
