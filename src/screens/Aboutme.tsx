@@ -4,31 +4,19 @@ import TechnicalSkills from "../components/technical-skills/TechnicalSkills";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import resumePath from "../assets/nikson-shrestha-resume.pdf";
+import { motion } from "framer-motion";
 
 const Aboutme = () => {
-  const handleDownloadCV = async () => {
-    const fileName = "nikson-shrestha-resume.pdf";
-    const filePath = resumePath;
+  const handleDownloadCV = () => {
+    const fileName =
+      import.meta.env.VITE_PUBLIC_URL + "/nikson-shrestha-resume.pdf";
 
-    try {
-      const response = await fetch(filePath);
-      const fileContent = await response.blob();
-
-      const url = URL.createObjectURL(fileContent);
-
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = fileName;
-
-      document.body.appendChild(link);
-      link.click();
-
-      document.body.removeChild(link);
-      URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error("Error downloading file:", error);
-    }
+    const aTag = document.createElement("a");
+    aTag.href = fileName;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
   };
 
   useEffect(() => {
@@ -73,15 +61,11 @@ const Aboutme = () => {
           results-driven individual, I am ready to bring my skills to your
           organization.
         </Text>
-
-        <Button
-          mt={3}
-          data-aos="fade-up"
-          data-aos-duration="2500"
-          onClick={handleDownloadCV}
-        >
-          Download CV
-        </Button>
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+          <Button mt={3} onClick={handleDownloadCV} colorScheme="yellow">
+            Download CV
+          </Button>
+        </motion.div>
       </Box>
       <Box>
         <Education />
