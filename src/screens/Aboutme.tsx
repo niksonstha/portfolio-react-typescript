@@ -5,20 +5,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import resume from "../assets/nikson-shrestha-resume.pdf";
 
 const Aboutme = () => {
   const handleDownloadCV = () => {
-    const fileName =
-      import.meta.env.VITE_PUBLIC_URL + "/nikson-shrestha-resume.pdf";
-
     const aTag = document.createElement("a");
-    aTag.href = fileName;
+    aTag.href = resume;
+
+    const fileName = resume.split("/").pop();
+
     aTag.setAttribute("download", fileName);
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
   };
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -62,8 +62,8 @@ const Aboutme = () => {
           organization.
         </Text>
         <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-          <Button mt={3} onClick={handleDownloadCV} colorScheme="yellow">
-            Download CV
+          <Button mt={3} colorScheme="yellow" onClick={handleDownloadCV}>
+            Download cv
           </Button>
         </motion.div>
       </Box>
