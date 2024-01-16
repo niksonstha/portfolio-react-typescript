@@ -6,7 +6,7 @@ export const getRepo = async () => {
       url: "https://api.github.com/user/repos",
       method: "get",
       headers: {
-        Authorization: "Bearer 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",
+        Authorization: `Bearer ${import.meta.env.VITE_TOKEN}`,
       },
     };
 
