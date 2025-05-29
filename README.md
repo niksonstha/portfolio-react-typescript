@@ -32,7 +32,7 @@ Welcome to my personal portfolio website, built with **React**, **TypeScript**, 
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/portfolio-react-typescript.git
+git clone https://github.com/niksonstha/portfolio-react-typescript.git
 cd portfolio-react-typescript
 npm install
 
@@ -40,8 +40,7 @@ npm install
 src/
 ├── assets/           # Images, logos, etc.
 ├── components/       # Reusable UI components
-├── pages/            # Page-level components (Home, Projects, Contact)
-├── data/             # JSON or TypeScript data files
+├── screens/            # Page-level components (Home, Projects, Contact)
 ├── App.tsx           # Root component
 └── main.tsx          # Entry point
 
