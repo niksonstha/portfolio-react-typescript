@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import resume from "../assets/nikson-shrestha-resume.pdf";
+import resume from "../assets/Nikson Shrestha.pdf";
 
 const Aboutme = () => {
   const handleDownloadCV = () => {

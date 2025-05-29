@@ -58,7 +58,7 @@ const Education = () => {
           </Text>
           <Text>Prime College</Text>
           <Text fontSize="sm" color="gray.500">
-            2019 - Current
+            2019 - 2024
           </Text>
         </Box>
       </SimpleGrid>

@@ -68,7 +68,9 @@ const TechnicalSkills = () => {
               <ListItem>Css</ListItem>
               <ListItem>ChakraUI</ListItem>
               <ListItem>React JS</ListItem>
+              <ListItem>Next JS</ListItem>
               <ListItem>AngularJS</ListItem>
+              <ListItem>jQuery</ListItem>
             </SimpleGrid>
           </UnorderedList>
         </Box>
@@ -173,6 +175,7 @@ const TechnicalSkills = () => {
               <ListItem>Adaptability</ListItem>
               <ListItem>Time Management</ListItem>
               <ListItem>Problem-Solving</ListItem>
+              <ListItem>Team work</ListItem>
             </SimpleGrid>
           </UnorderedList>
         </Box>
