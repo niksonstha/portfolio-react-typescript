@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website, built with **React**, **TypeScript**, and modern web development best practices. This site showcases my projects, skills, and experience as a developer.
 
-![Website Screenshot](./screenshot.png) <!-- Replace with an actual screenshot if available -->
+![Website Screenshot](./src/assets/ss.png) <!-- Replace with an actual screenshot if available -->
 
 ---
 
@@ -10,23 +10,20 @@ Welcome to my personal portfolio website, built with **React**, **TypeScript**, 
 
 - ⚛️ Built with **React + TypeScript**
 - 💡 Fully responsive and mobile-friendly
-- 🌙 Dark/light mode toggle
 - 📁 Projects section with live demos & GitHub links
 - 📄 Resume download option
-- 🔗 Social media integration
 
 ---
 
 ## 🛠 Tech Stack
 
-| Technology | Description                |
-|------------|----------------------------|
-| React      | UI library                 |
-| TypeScript | Type-safe JavaScript       |
-| Vite       | Build tool & dev server    |
-| TailwindCSS| Utility-first CSS framework|
-| React Router | Client-side routing     |
-| EmailJS    | Contact form integration   |
+| Technology   | Description                            |
+| ------------ | -------------------------------------- |
+| React        | UI library                             |
+| TypeScript   | Type-safe JavaScript                   |
+| Vite         | Build tool & dev server                |
+| ChakraUI     | Component system for building products |
+| React Router | Client-side routing                    |
 
 ---
 
@@ -56,3 +53,4 @@ Email: sthanikson10@gmail.com
 LinkedIn: https://www.linkedin.com/in/nikson-shrestha-8483ab174/
 
 Portfolio Site: https://niksonshrestha.com.np/
+```
