@@ -40,7 +40,7 @@ npm install
 src/
 ├── assets/           # Images, logos, etc.
 ├── components/       # Reusable UI components
-├── screens/            # Page-level components (Home, Projects, Contact)
+├── screens/          # Page-level components (Home, Projects, Contact)
 ├── App.tsx           # Root component
 └── main.tsx          # Entry point
 
