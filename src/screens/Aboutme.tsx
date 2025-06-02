@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import resume from "../assets/Nikson Shrestha.pdf";
+import { FiChevronDown } from "react-icons/fi";
 
 const Aboutme = () => {
   const handleDownloadCV = () => {
@@ -71,6 +72,18 @@ const Aboutme = () => {
           >
             Download cv
           </Button>
+        </motion.div>
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+          style={{ marginTop: "5rem" }}
+        >
+          <Box textAlign="center" display={"flex"}>
+            <FiChevronDown size="2rem" color="#A0AEC0" />
+            <Text fontSize="md" color="gray.400" mt={1}>
+              Scroll Down
+            </Text>
+          </Box>
         </motion.div>
       </Box>
       <Box>
