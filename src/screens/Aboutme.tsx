@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import resume from "../assets/Nikson Shrestha.pdf";
 import { FiChevronDown } from "react-icons/fi";
+import Experience from "../components/experience/Experience";
 
 const Aboutme = () => {
   const handleDownloadCV = () => {
@@ -89,6 +90,7 @@ const Aboutme = () => {
       <Box>
         <Education />
         <TechnicalSkills />
+        <Experience />
       </Box>
     </Box>
   );
