@@ -16,9 +16,6 @@ const TechnicalSkills = () => {
       alignItems={"center"}
       justifyContent={"center"}
       mb={20}
-      style={{
-        scrollSnapAlign: "start",
-      }}
       height={"100vh"}
     >
       <Heading

@@ -46,14 +46,7 @@ const Experience = () => {
   };
 
   return (
-    <Box
-      py={10}
-      px={[4, 8]}
-      maxW="800px"
-      mx="auto"
-      style={{ scrollSnapAlign: "start" }}
-      height={"100vh"}
-    >
+    <Box py={10} px={[4, 8]} maxW="800px" mx="auto" height={"100vh"}>
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
